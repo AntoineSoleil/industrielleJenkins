@@ -5,8 +5,8 @@ node {
         echo 'test'
     }
     stage("deployment") {
-       git  'https://github.com/AntoineSoleil/industrielleJenkins.git'
        sh 'composer install'
+       git  'https://github.com/AntoineSoleil/industrielleJenkins.git'
       //  sh 'vendor/bin/phpunit'
     }
 }
