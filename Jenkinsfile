@@ -1,5 +1,5 @@
 node {
-    stage("composer_install") {
+    stage("Test") {
         // Run `composer update` as a shell script
        // sh 'composer install'
         echo 'test'
