@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/toto', function () {
-    return view('test2');
+    return view('test2'); 
 });
 
 Auth::routes();
