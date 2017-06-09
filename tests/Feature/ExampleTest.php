@@ -19,4 +19,10 @@ class ExampleTest extends TestCase
         $response = $this->get('/');
         $response->assertStatus(200);
     }
+	public function testBasicTest2()
+	{
+		$data = [10, 20, 30];
+		$result = array_sum($data);
+		$this->assertEquals(60, $result);
+	}
 }
