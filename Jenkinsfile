@@ -1,9 +1,16 @@
-node {
-    stage("Test") {
-       git 'https://github.com/AntoineSoleil/industrielleJenkins.git'
-       sh 'composer install'
-    }
-    stage("Deployement") {
-        echo 'deploy'
+pipeline {
+    agent any
+    stages {
+        stage('Test') {
+            steps {
+               git 'https://github.com/AntoineSoleil/industrielleJenkins.git'
+               sh 'composer install'
+            }
+        }
+        stage('Deployement') {
+            steps {
+                echo 'deploy'
+            }
+        }
     }
 }
